@@ -43,7 +43,7 @@ public class TpWsApplication implements CommandLineRunner {
 	public void run(String... args) throws Exception {
 		try
 		{
-			PostgreSQL=new ConnectDB("jdbc:postgresql://floppy.db.elephantsql.com:5432/wvsusyqf","wvsusyqf","LzM44nfas4Vrl6XZTVK1s1eMXeXrej7I");
+			PostgreSQL=new ConnectDB("jdbc:postgresql://floppy.db.elephantsql.com/wvsusyqf","wvsusyqf","LzM44nfas4Vrl6XZTVK1s1eMXeXrej7I");
 			if(PostgreSQL!=null) System.out.println("Connected to PostgreSQL - Enchere");
 		}
 		catch(SQLException sqle){
